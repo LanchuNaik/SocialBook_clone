@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialBook</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo" class="logo">
+      </a>
+      <ul>
+        <li><img src="images/notification.png" alt="notification-logo"></li>
+        <li><img src="images/inbox.png" alt="inbox-logo"></li>
+        <li><img src="images/video.png" alt="video-logo"></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <img src="images/search.png" alt="search">
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="nav-user-icon online" onclick="settingMenuToggle()">
+        <img src="images/profile-pic.png" alt="profile-pic">
+      </div>
+    </div>
+
+    <!-- -----------------settings menu------ -->
+    <div class="settings-menu">
+
+      <div class="dark-btn">
+        <span></span>
+      </div>
+
+      <div class="user-profile">
+        <img src="images/profile-pic.png">
+        <div>
+          <p>John Micholson</p>
+          <a href="profile.html">See Your Profile</a>
+        </div>
+      </div>
+      <hr>
+
+      <div class="user-profile">
+        <img src="images/feedback.png">
+        <div>
+          <p>Give Feedback</p>
+          <span>Help us for improving web-design</span>
+        </div>
+      </div>
+      <hr>
+
+      <div class="user-profile">
+        <img src="images/setting.png">
+        <p>Settings & Privacy</p>
+      </div>
+
+      <div class="user-profile">
+        <img src="images/help.png">
+        <p>Help & Support</p>
+      </div>
+
+      <div class="user-profile">
+        <img src="images/display.png">
+        <p>Display & accessibility</p>
+      </div>
+
+      <div class="user-profile">
+        <img src="images/logout.png">
+        <p>Logout</p>
+      </div>
+
+
+    </div>
+  </nav>
+
+  <div class="container">
+    <!------------------left-sidebar----------------------------------- -->
+    <div class="left-sidebar">
+      <div class="imp-links">
+        <a href="#"><img src="images/news.png">Latest news</a>
+        <a href="#"><img src="images/friends.png">Friends</a>
+        <a href="#"><img src="images/group.png">Groups</a>
+        <a href="#"><img src="images/marketplace.png">Market Palce</a>
+        <a href="#"><img src="images/watch.png">Watch</a>
+        <a href="#">See more</a>
+      </div>
+      <div class="shortcut-links">
+        <p>Your ShortCut</p>
+        <a href="#"><img src="images/shortcut-1.png">Web Developers</a>
+        <a href="#"><img src="images/shortcut-2.png">Web Design Course</a>
+        <a href="#"><img src="images/shortcut-3.png">Full Stack Development</a>
+        <a href="#"><img src="images/shortcut-4.png">Web Experts</a>
+      </div>
+    </div>
+
+    <!------------------Main-content----------------------------------- -->
+    <div class="main-content">
+      <div class="story-container">
+        <div class="story-gallery">
+          <div class="story story-1">
+            <img src="images/upload.png">
+            <p>Post Story</p>
+          </div>
+        </div>
+
+        <div class="story-gallery">
+          <div class="story story-2">
+            <img src="images/member-1.png">
+            <p>Alison Mina</p>
+          </div>
+        </div>
+
+        <div class="story-gallery">
+          <div class="story story-3">
+            <img src="images/member-2.png">
+            <p>Anthony Desouza</p>
+          </div>
+        </div>
+
+        <div class="story-gallery">
+          <div class="story story-4">
+            <img src="images/member-3.png">
+            <p>Somana Rosa</p>
+          </div>
+        </div>
+
+        <div class="story-gallery">
+          <div class="story story-5">
+            <img src="images/member-4.png">
+            <p>John Doe</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="write-post-container">
+        <div class="user-profile">
+          <img src="images/profile-pic.png">
+          <div>
+            <p>John Micholson</p>
+            <small>Public<i class="fa-solid fa-caret-down"></i></small>
+          </div>
+        </div>
+
+        <div class="post-input-container">
+          <textarea name="textarea" row="3" placeholder="Whats On Your Mind John?"></textarea>
+          <div class="add-post-link">
+            <a href="#"><img src="images/live-video.png">Live Video</a>
+            <a href="#"><img src="images/photo.png">PhotoVideo</a>
+            <a href="#"><img src="images/feeling.png">FeelingActivity</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-pic.png">
+            <div>
+              <p>John Micholson</p>
+              <span>June 24 2021 13.45PM</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p>Like and share this video with your friends <strong>@web_design</strong> facebook page on your post. <a
+            href="#">#Web_design
+          </a><a href="#"> #YoutubeChannel</a></p>
+        <img src="images/feed-image-2.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like-blue.png" class="like-btn">120</div>
+            <div><img src="images/comments.png">120</div>
+            <div><img src="images/share.png">120</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-pic.png">
+            <div>
+              <p>John Micholson</p>
+              <span>June 24 2021 13.45PM</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p>Subscribe <strong>@web_design</strong> Youtube Channel to watch the web development. <a href="#">#Web_design
+          </a><a href="#"> #YoutubeChannel</a></p>
+        <img src="images/feed-image-1.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like.png">120</div>
+            <div><img src="images/comments.png">120</div>
+            <div><img src="images/share.png">120</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-pic.png">
+            <div>
+              <p>John Micholson</p>
+              <span>June 24 2021 13.45PM</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p>Subscribe <strong>@web_design</strong> Youtube Channel to watch the web development. <a href="#">#Web_design
+          </a><a href="#"> #YoutubeChannel</a></p>
+        <img src="images/feed-image-3.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like.png">120</div>
+            <div><img src="images/comments.png">120</div>
+            <div><img src="images/share.png">120</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-pic.png">
+            <div>
+              <p>John Micholson</p>
+              <span>June 24 2021 13.45PM</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p>Subscribe <strong>@web_design</strong> Youtube Channel to watch the web development. <a href="#">#Web_design
+          </a><a href="#"> #YoutubeChannel</a></p>
+        <img src="images/feed-image-4.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like.png">120</div>
+            <div><img src="images/comments.png">120</div>
+            <div><img src="images/share.png">120</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-pic.png">
+            <div>
+              <p>John Micholson</p>
+              <span>June 24 2021 13.45PM</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p>Subscribe <strong>@web_design</strong> Youtube Channel to watch the web development. <a href="#">#Web_design
+          </a><a href="#"> #YoutubeChannel</a></p>
+        <img src="images/feed-image-5.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like.png">120</div>
+            <div><img src="images/comments.png">120</div>
+            <div><img src="images/share.png">120</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <button type="button" class="load-more-btn">Load more</button>
+    </div>
+
+    <!------------------right-sidebar----------------------------------- -->
+    <div class="right-sidebar">
+      <div class="sidebar-title">
+        <h4>Events</h4>
+        <a href="#">See All</a>
+      </div>
+
+      <div class="event">
+        <div class="left-event">
+          <h3>18</h3>
+          <span>August</span>
+        </div>
+        <div class="right-event">
+          <h4>Social Media</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="left-event">
+          <h3>21</h3>
+          <span>September</span>
+        </div>
+        <div class="right-event">
+          <h4>Mobile Marketing</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+
+      <div class="sidebar-title">
+        <h4>Advertisement</h4>
+        <a href="#">Close</a>
+      </div>
+      <img src="images/advertisement.png" class="sidebar-ad">
+      <div class="sidebar-title">
+        <h4>Conversation</h4>
+        <a href="#">Hide Chat</a>
+      </div>
+
+      <div class="online-list">
+        <div class="online">
+          <img src="images/member-1.png">
+        </div>
+        <p>Alison Mina</p>
+      </div>
+
+      <div class="online-list">
+        <div class="online">
+          <img src="images/member-2.png">
+        </div>
+        <p>Anthony Desouza</p>
+      </div>
+
+      <div class="online-list">
+        <div class="online">
+          <img src="images/member-3.png">
+        </div>
+        <p>Somana Rosa</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>@Copywrite web_design Channel</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile page- SocialBook</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">
+      <img src="images/logo.png" alt="logo" class="logo">
+    </a>
+      <ul>
+        <li><img src="images/notification.png" alt="notification-logo"></li>
+        <li><img src="images/inbox.png" alt="inbox-logo"></li>
+        <li><img src="images/video.png" alt="video-logo"></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <img src="images/search.png" alt="search">
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="nav-user-icon online" onclick="settingMenuToggle()">
+        <img src="images/profile-pic.png" alt="profile-pic">
+      </div>
+    </div>
+
+    <!-- -----------------settings menu------ -->
+    <div class="settings-menu">
+
+      <div class="dark-btn">
+        <span></span>
+      </div>
+
+      <div class="user-profile">
+        <img src="images/profile-pic.png">
+        <div>
+          <p>John Micholson</p>
+        <a href="profile.html">See Your Profile</a>
+        </div>
+      </div>
+      <hr>
+
+      <div class="user-profile">
+        <img src="images/feedback.png">
+        <div>
+          <p>Give Feedback</p>
+          <span>Help us for improving web-design</span>
+        </div>
+      </div>
+      <hr>
+
+      <div class="user-profile">
+        <img src="images/setting.png">
+        <p>Settings & Privacy</p>
+      </div>
+
+      <div class="user-profile">
+        <img src="images/help.png">
+        <p>Help & Support</p>
+      </div>
+
+      <div class="user-profile">
+        <img src="images/display.png">
+        <p>Display & accessibility</p>
+      </div>
+
+      <div class="user-profile">
+        <img src="images/logout.png">
+        <p>Logout</p>
+      </div>
+
+
+    </div>
+  </nav>
+
+  <!-- ------------------------profile-page--------------------- -->
+  <div class="profile-container">
+    <img src="images/cover.png" class="cover-img">
+
+    <div class="profile">
+
+      <div class="user-profile">
+        <img src="images/profile.png" class="user-pic">
+        <div class="user">
+          <h4>Jack Nicholson</h4>
+          <p>120 friends - 20 mutual</p>
+          <div class="mutual-frds">
+            <img src="images/member-1.png">
+            <img src="images/member-2.png">
+            <img src="images/member-3.png">
+            <img src="images/member-4.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-right">
+        <div class="friends btn">
+          <img src="images/friends.png">Friends
+        </div>
+        <div class="message btn">
+          <img src="images/message.png">Message
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="left-container">
+      <div class="intro-container">
+        <h4>Intro</h4>
+        <p>Belive in Yourself  and You can do unbelivable things</p>
+        <hr>
+        <br>
+        <div class="user-profile">
+          <img src="images/profile-job.png">
+          <p>Director at 99media Ltd</p>
+        </div>
+
+        <div class="user-profile">
+          <img src="images/profile-study.png">
+          <p>Studied MBA at Amity University</p>
+        </div>
+
+        <div class="user-profile">
+          <img src="images/profile-study.png">
+          <p>went to DPD Delhi</p>
+        </div>
+
+        <div class="user-profile">
+          <img src="images/profile-home.png">
+          <p>Director at 99media Ltd</p>
+        </div>
+
+        <div class="user-profile">
+          <img src="images/profile-job.png">
+          <p>Lives in Bangalore,India</p>
+        </div>
+
+        <div class="user-profile">
+          <img src="images/profile-location.png">
+          <p>From Bangalore,India</p>
+        </div>
+
+      </div>
+
+      <div class="photo-container">
+        <div class="row">
+          <h4>Photos</h4>
+          <p><a href="#">All Photos</a></p>
+        </div>
+
+      <div class="photo-grid">
+        <img src="images/photo1.png">
+        <img src="images/photo2.png">
+        <img src="images/photo3.png">
+        <img src="images/photo4.png">
+        <img src="images/photo5.png">
+        <img src="images/photo6.png">
+      </div>
+
+      </div>
+
+      <div class="friends-container">
+        <div class="row">
+          <h4>Friends <br>
+           <span> 120(10 mutual)</span>
+          </h4>
+          <p><a href="#">All Friends</a></p>
+        </div>
+
+      <div class="photo-grid">
+       <div class="frd"><img src="images/member-1.png"><p>Joseph M</p></div>
+       <div class="frd"><img src="images/member-2.png"><p>Michol N</p></div>
+       <div class="frd"><img src="images/member-3.png"><p>Georgea D</p></div>
+       <div class="frd"><img src="images/member-4.png"><p>Nexy S</p></div>
+       <div class="frd"><img src="images/member-5.png"><p>Jhon Fresk</p></div>
+       <div class="frd"><img src="images/member-6.png"><p>Niyola Deza</p></div>
+       <div class="frd"><img src="images/member-7.png"><p>Anthony F</p></div>
+       <div class="frd"><img src="images/member-8.png"><p>Lexy Sujay</p></div>
+       <div class="frd"><img src="images/member-9.png"><p>James Deo</p></div>
+        
+      </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="right-container">
+      <div class="write-post-container">
+        <div class="user-profile">
+          <img src="images/profile-pic.png">
+          <div>
+            <p>John Micholson</p>
+            <small>Public<i class="fa-solid fa-caret-down"></i></small>
+          </div>
+        </div>
+
+        <div class="post-input-container">
+          <textarea name="textarea" row="3" placeholder="Whats On Your Mind John?"></textarea>
+          <div class="add-post-link">
+            <a href="#"><img src="images/live-video.png">Live Video</a>
+            <a href="#"><img src="images/photo.png">PhotoVideo</a>
+            <a href="#"><img src="images/feeling.png">FeelingActivity</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-pic.png">
+            <div>
+              <p>John Micholson</p>
+              <span>June 24 2021 13.45PM</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p>Like and share this video with your friends <strong>@web_design</strong> facebook page on your post. <a
+            href="#">#Web_design
+          </a><a href="#"> #YoutubeChannel</a></p>
+        <img src="images/feed-image-2.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like-blue.png">120</div>
+            <div><img src="images/comments.png">120</div>
+            <div><img src="images/share.png">120</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-pic.png">
+            <div>
+              <p>John Micholson</p>
+              <span>June 24 2021 13.45PM</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p>Subscribe <strong>@web_design</strong> Youtube Channel to watch the web development. <a href="#">#Web_design
+          </a><a href="#"> #YoutubeChannel</a></p>
+        <img src="images/feed-image-1.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like.png">120</div>
+            <div><img src="images/comments.png">120</div>
+            <div><img src="images/share.png">120</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-pic.png">
+            <div>
+              <p>John Micholson</p>
+              <span>June 24 2021 13.45PM</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p>Subscribe <strong>@web_design</strong> Youtube Channel to watch the web development. <a href="#">#Web_design
+          </a><a href="#"> #YoutubeChannel</a></p>
+        <img src="images/feed-image-3.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like.png">120</div>
+            <div><img src="images/comments.png">120</div>
+            <div><img src="images/share.png">120</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-pic.png">
+            <div>
+              <p>John Micholson</p>
+              <span>June 24 2021 13.45PM</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p>Subscribe <strong>@web_design</strong> Youtube Channel to watch the web development. <a href="#">#Web_design
+          </a><a href="#"> #YoutubeChannel</a></p>
+        <img src="images/feed-image-4.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like.png">120</div>
+            <div><img src="images/comments.png">120</div>
+            <div><img src="images/share.png">120</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="user-profile">
+            <img src="images/profile-pic.png">
+            <div>
+              <p>John Micholson</p>
+              <span>June 24 2021 13.45PM</span>
+            </div>
+          </div>
+          <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+
+        <p>Subscribe <strong>@web_design</strong> Youtube Channel to watch the web development. <a href="#">#Web_design
+          </a><a href="#"> #YoutubeChannel</a></p>
+        <img src="images/feed-image-5.png" class="post-img">
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div><img src="images/like.png">120</div>
+            <div><img src="images/comments.png">120</div>
+            <div><img src="images/share.png">120</div>
+          </div>
+          <div class="post-profile-icon">
+            <img src="images/profile-pic.png"><i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+  <footer>
+    <p>@Copywrite web_design Channel</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
